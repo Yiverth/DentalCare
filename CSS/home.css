@@ -1,0 +1,130 @@
+/*Estilos para el encabezado*/
+header {
+    
+    color: #2ac605;
+    padding: 20px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+/*Estilos para el encabezado que contiene el logo y el texto*/
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /*Espacio entre el logo y el texto*/
+}
+
+/*Estilos para el logo*/
+.logo {
+    width: 8%;
+    height: 8%;
+}
+
+/*Estilos para el texto del encabezado*/
+.titulotexto{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para el menu de navegacion*/
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+}
+/* Margen del menu*/
+.menu{
+    margin: 0 10px;
+}
+/*Estilos para el texto del menu*/
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 39px;
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 10px 20px;   
+}
+/*Estilos para el logo*/
+.userlogo {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+.menu:not(:first-child) {
+    border-left: 1px solid white;
+    padding-left: 10px;
+}
+
+.informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    border-bottom: 1px solid black;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 35px;
+    border-right: 1px solid black;
+}
+
+.info-group:last-child {
+    border-right: none;
+}
+
+.informacion img {
+    width: 50px;
+    height: 50px;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 50s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li {
+    flex: 1;
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    100% { margin-left: -300%; }
+}
+
+
+
+
